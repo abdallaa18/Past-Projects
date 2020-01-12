@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="8dp"
+app:cardBackgroundColor="#121212">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/deleteEventImage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="40dp"
+                android:background="#121212"
+                android:padding="4dp"
+                android:src="@drawable/applogo" />
+            <TextView
+                android:id="@+id/deleteEventTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textAlignment="textStart"
+                android:layout_centerHorizontal="true"
+
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/deleteEventImage"
+                android:text="Event Title"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/deleteEventDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deleteEventHost"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                android:text="Event Description"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+            <TextView
+                android:id="@+id/deleteEventHost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deleteEventTitle"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/deleteEventImage"
+
+                android:layout_marginTop="4dp"
+
+
+
+                android:text="Host: "
+                android:textAlignment="textStart"
+                android:textColor="#FE9900"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/deleteEventDate"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deleteEventHost"
+                android:layout_centerInParent="true"
+
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/deleteEventImage"
+
+                android:text="Event Date: "
+                android:textColor="#FFFFFF"
+
+                android:textSize="15dp"
+                />
+            <Button
+                android:id="@+id/deleteUserEventButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deleteEventDate"
+                android:layout_marginTop="15dp"
+                style="@style/AppTheme.RoundedCornerMaterialButton2"
+                android:textColor="#000000"
+                android:drawableLeft="@drawable/ic_delete_black_24dp"
+
+                android:text="Delete Event" />
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

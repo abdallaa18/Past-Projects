@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    android:background="#000000">
+
+
+    <EditText
+        android:id="@+id/userNameSearch"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/rounded_edittext"
+android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/ic_search_black_24dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+
+
+    <TextView
+        android:id="@+id/requestBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userNameSearch"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="55dp"
+
+        android:background="#FE9900"
+        android:text="Friend Requests"
+        android:textAlignment="center" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friendRequestRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/requestBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friendListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/friendListBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/friendListBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/friendRequestRecyclerView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginTop="322dp"
+
+        android:background="#FE9900"
+        android:text="Friends"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:text="Search" />
+</RelativeLayout>

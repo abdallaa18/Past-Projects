@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#121212">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:padding="4dp"
+                android:src="@drawable/avatar"
+                />
+
+            <TextView
+                android:id="@+id/requesteeName"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/userImage"
+                android:text="firstName"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/requesteeUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/requesteeName"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+
+                android:layout_marginEnd="120dp"
+                android:text="UserName"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#FE9900"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/acceptRequest"
+                android:layout_width="114dp"
+                android:layout_height="43dp"
+                android:layout_below="@id/requesteeUserName"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="31dp"
+
+                android:layout_marginTop="-13dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toRightOf="@id/userImage"
+                android:drawableLeft="@drawable/ic_done_green_24dp"
+                android:text="Accept" />
+
+            <Button
+                android:id="@+id/denyRequest"
+                android:layout_width="114dp"
+                android:layout_height="43dp"
+                android:layout_below="@id/requesteeUserName"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="31dp"
+
+                android:layout_marginTop="-13dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toRightOf="@id/acceptRequest"
+                android:drawableLeft="@drawable/ic_close_red_24dp"
+                android:text="Decline" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
